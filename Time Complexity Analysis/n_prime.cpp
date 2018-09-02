@@ -13,7 +13,7 @@ bool m1_isPrime(int num)
 
 bool m2_isPrime(int num)
 {
-	for(int i = 0; i < sqrt(num); i++)
+	for(int i = 2; i < sqrt(num); i++)
 	{
 		if(num%i == 0)
 			return false;
