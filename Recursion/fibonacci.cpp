@@ -1,6 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Recursion is not always good
+// In the this recursion causes the formation
+// of Recursive Tree which has uneccessary
+// overhead, because many funcitons are
+// repeatedly called many many times
+
+// Time complexity: O(n)
 int fib_iterative(int n)
 {
     if(n <= 1)
@@ -21,6 +28,7 @@ int fib_iterative(int n)
     return F;
 }
 
+// Time complexity: 2^(n/2) <= T(n) <= 2^(n)
 int fib_recursion(int n)
 {
     if(n <= 1)
